@@ -1,0 +1,102 @@
+body {
+	background-color: #ddf;
+	margin: 0; padding: 10px;
+	border: 10px double #336;
+	border-left: 15px double #aad;
+	border-top: 15px double #99b;
+	border-bottom: 15px solid #aac;
+	font-family: 'Raleway', sans-serif;
+	height: 575px;
+	border-radius: 20px;
+}
+h1, h2 {
+	background-color: #fff;
+	padding: 5px 5px;
+	text-shadow: 2px 2px 0px #ddd;
+	width: auto;
+	text-align: center;
+	margin: 10px;
+	box-shadow: -2px 2px 0px #000;
+}
+
+#inputWrapper, #outputWrapper {
+	border:1px solid #000;
+	height: 500px;
+	width: 475px;
+	float:left;
+	margin: 0 10px;
+	text-align: center;
+}
+
+#input {
+	padding: 0 10px;
+	width: 450px; 
+	height: 450px; 
+	display: block;
+	text-align:center;
+}
+
+#outputWrapper {
+	width: 410px;
+	float: left;
+	padding: 0 10px;
+}
+
+
+#output {
+	width: 350px;
+	border: 3px solid #ddd;
+	background-color: #f60;
+	color: #000;
+	float: left;
+	margin: 0px;
+	padding: 30px;
+	font-size: 16px;
+	text-align: center
+}
+
+#output h1 {
+	font-size: 34px;
+	color: #ff0;
+	text-shadow: 2px 2px 0px #fa0;
+	margin: auto;
+}
+#output p {
+	padding: 10px;
+	width: auto;
+	border: 1px solid #000;
+	background-color: #fff;
+	margin: 10px;
+	float: left;
+}
+textarea {
+	float:left;
+	width: 400px;
+	height: 400px;
+	margin: 20px;
+}
+
+button {
+	display:block;
+	float: left;
+	width: 50px;
+	margin: 0px auto 20px;    
+}
+
+#testImg {
+	width: 250px;
+	height: 250px;
+	display: block;
+	border: 2px solid #fff;
+	clear: left;
+	margin: 25px auto;
+}
+
+
+#result {
+	float: left; 
+	border: 1px solid #000;
+	padding: 0 10px;
+	width: 300px;
+
+}

@@ -1,79 +1,33 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>HTML Snapshot Thumbnail Generator</title>
-		
-		<style>
-			body {
-				background-color: #000;
-			}
-			#output {
-				font-family: helvetica, arial, sans-serif;
-				width: 300px;
-				height: 600px;
-				border: 3px solid #ddd;
-				background-color: #f60;
-				color: #000;
-				float: left;
-				margin: 10px;
-				padding: 30px;
-				font-size: 16px;
-				text-align: center
-			}
-			#output h1 {
-				font-size: 54px;
-				color: #ff0;
-				text-shadow: 2px 2px 0px #fa0;
-				margin: auto;
-			}
-			#output p {
-				padding: 10px;
-				width: auto;
-				box-shadow: -2px 2px 1px #000;
-				font-family: Georgia;
-				background-color: #fff;
-				margin: 10px;
-				float: left;
-			}
-			textarea {
-				float:left;
-				width: 500px;
-				height: 200px;
-			}
-
-			button {
-				display:block
-				float: left;
-				width: 50px;
-				margin: 0px auto 20px;    
-			}
-
-			#testImg {
-				width: 250px;
-				height: 250px;
-				display: block;
-				border: 2px solid #fff;
-				clear: left;
-				margin: 25px auto;
-			}
-		
-		
-		</style>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:300,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/styles.css" />
 	</head>
 	<body>
-	
-	
-		<div style="width: 300px; height: 600px; float: left; display: block;">
-			<textarea name="content" style="width:100%"></textarea>
-			<div style="height: 30px; text-align:center; width: 100%;">
-			<button id="save">Save</button>
-			<button id="load">Load</button>
+	<h1>HTML Snapshot Thumbnail Generator</h1>
+		<div id="inputWrapper">
+			<div id="input">
+				<h2>1. Write Content</h2>
+				<p>Press 'Load' then 'Save' for pre-written content.</p>
+				<textarea name="content" style="width:100%"></textarea>
+				<div style="height: 30px; text-align:center; width: 100%;">
+					<button id="save">Save</button>
+					<button id="load">Load</button>
+				</div>
 			</div>
+		</div>
+		<div id="outputWrapper">
+			<h2>2. See Content </h2>
+			<p>This is the output from the TinyMCE content generator.</p>
+			<div id="output"></div>
+		</div>
+		<div id="result">
+			<h2>3. Get Image</h2>
+			<p>Your thumbnail is available for download.</p>
 			<img id="testImg" src="" />    
 		</div>
-
-		<div id="output"></div>
-
-
 	
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script type="text/javascript" src="scripts/tinymce/js/tinymce/tinymce.min.js"></script>
