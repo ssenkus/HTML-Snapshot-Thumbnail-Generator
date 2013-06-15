@@ -1,7 +1,7 @@
 	function ajaxLoad() {
 	    var ed = tinyMCE.get('content');
 	    ed.setContent(	'<div style="text-align:center">' + 
-							'<h1>AWESOME PICTURE</h1>
+							'<h1>AWESOME PICTURE</h1>' +
 							'<img style="width: 200px; height: 200px;" src="images/mount_hood_USGS.jpg" /><br />' +
 							'<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ' + 
 							'incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation' + 
