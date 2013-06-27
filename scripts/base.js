@@ -1,4 +1,4 @@
-	function ajaxLoad() {
+		function ajaxLoad() {
 	    var ed = tinyMCE.get('content');
 	    ed.setContent(	'<div style="text-align:center">' + 
 							'<h1>AWESOME PICTURE</h1>' +
@@ -17,11 +17,19 @@
 
 	    html2canvas(target, {
 	        onrendered: function (canvas) {
-	            var data = canvas.toDataURL();
-	            $('#testImg').attr("src", data); /*.css({
-	                'width': '160px',
-	                'height': '160px'
-	            }); */
+			    var extra_canvas = document.createElement("canvas");
+                extra_canvas.setAttribute('width',100);
+                extra_canvas.setAttribute('height',100);
+                var ctx = extra_canvas.getContext('2d');
+                ctx.drawImage(canvas,0,0,canvas.width, canvas.height,0,0,100,100);
+                var dataURL = extra_canvas.toDataURL();
+                var img = $(document.createElement('img'));
+                img.attr('src', dataURL);
+                // insert the thumbnail at the top of the page
+                $('#result').append(img);
+			
+			
+
 	        }
 	    });
 	}
